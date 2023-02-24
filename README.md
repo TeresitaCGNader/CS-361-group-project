@@ -11,3 +11,6 @@ This is the code from the microservice that Darren Mah created (https://github.c
   <li><b>Individual project:</b> Generates a random Dad Joke</li> (by Teresita Guzman Nader)
 </ul>
 
+<h2>Video</h2>
+https://media.oregonstate.edu/media/t/1_vysz3ixy
+
