@@ -16,7 +16,8 @@ rand_word = random_word()
 
 #Socket to talk to server
 #print("Connecting to server…")
-print("(If the generator is not working you can also go to https://dadjokegenerator.com/)")
+print("\nDisclosure: Your information is private and will not be recorded")
+print("(If the generator is not working you can also go to https://dadjokegenerator.com/)\n")
 print("Your Random Dad Joke is:")
 #print(dad_joke)
 socket = context.socket(zmq.REQ)
