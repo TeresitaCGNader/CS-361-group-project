@@ -1,11 +1,11 @@
 import random
 import zmq
-import time 
+import time
 
 def generate_random_slang():
     #Gen Z Slang Generator 
     word_list = []
-    with open("gen_z_slang_words.txt","r") as file:
+    with open("gen_z_slang_words.txt","r", encoding="utf-8-sig") as file:
         for line in file:
             word_list.append(line)
     random_word = random.choice(word_list)

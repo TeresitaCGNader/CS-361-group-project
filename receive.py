@@ -6,7 +6,7 @@ context = zmq.Context()
 
 def random_word():
     word_list = []
-    with open('gen_z_slang_words.txt', "r") as file:
+    with open('gen_z_slang_words.txt', "r", encoding="utf-8-sig") as file:
         for line in file:
             word_list.append(line.strip('\n'))
     word = random.choice(word_list)
@@ -16,6 +16,7 @@ rand_word = random_word()
 
 #Socket to talk to server
 #print("Connecting to server…")
+print("(If the generator is not working you can also go to https://dadjokegenerator.com/)")
 print("Your Random Dad Joke is:")
 #print(dad_joke)
 socket = context.socket(zmq.REQ)
@@ -30,8 +31,6 @@ socket.send_string(rand_word)
 # Get the reply.
 message = socket.recv()
 
-#print(message)
-#print(printme)
 
 
 
