@@ -1,6 +1,5 @@
 import random
 import zmq
-import time
 
 def generate_random_slang():
     #Gen Z Slang Generator 
